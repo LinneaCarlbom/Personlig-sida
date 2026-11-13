@@ -23,7 +23,7 @@ window.addEventListener("pointermove", (e) => {
 });
 
 
-// Varje bildruta: ett rutnät av prickar som växer när musen är nära
+// Varje bildruta är ett rutnät av prickar som växer när musen är nära
 app.ticker.add(() => {
   dots.clear();
   for (let x = 0; x < app.screen.width; x += 30) {
