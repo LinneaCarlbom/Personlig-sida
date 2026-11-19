@@ -1,26 +1,43 @@
+
 body {
   margin: 0;
+  background: transparent;
   font-family: sans-serif;
 }
 
-/* Pixi canvas sitter bakom texten */
+/* Pixi canvas läggs bakom texten */
 canvas {
-  position: fixed;
+  position: fixed;   
   top: 0;
   left: 0;
-  z-index: -1; /* lägger canvasen bakom allt annat */
+  z-index: -1;       /* lägger det bakom text och bilder */
 }
 
 main {
-  max-width: 40rem;
+  max-width: 60rem;  
+  margin: 0 auto;     /* centrerar hela innehållet */
   padding: 2rem;
 }
 
 h1 {
-  color: white;
+  color: rgb(232, 214, 143);
+  text-align: center;
+  font-size: 4rem;
 }
 
-p {
+.personlig {
+  background: rgba(18, 0, 31, 0.8);
+  padding: 1.5rem;
+  flex: 1;
+  text-align: center;
+  color: white;
+}
+  
+
+.heatravetext {
+  background: rgba(18, 0, 31, 0.8);
+  padding: 1.5rem;
+  flex: 1;
   color: white;
 }
 
@@ -50,4 +67,18 @@ p {
 .rad img {
   width: 50%;       /* bilden tar halva raden */
   height: auto;     /* behåller bildens proportioner */
+}
+
+
+/* Varannan rad hamnar bilden på andra sidan */
+.rad:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+/* Videon */
+video {
+  display: block;
+  width: 100%;
+  max-width: 50rem;
+  margin: 2rem auto;
 }
