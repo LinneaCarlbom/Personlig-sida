@@ -10,7 +10,7 @@ canvas {
   position: fixed;   
   top: 0;
   left: 0;
-  z-index: -1;       /* lägger det bakom text och bilder */
+  z-index: -1; 
 }
 
 main {
@@ -41,7 +41,7 @@ h1 {
   color: white;
 }
 
-/* lite transparent ruta bakom texten */
+/* transparent ruta bakom texten */
 .text {
   background: rgba(18, 0, 31, 0.8);
   padding: 1.5rem;
