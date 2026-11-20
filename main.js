@@ -6,7 +6,7 @@ document.body.appendChild(app.canvas);
 const dots = new PIXI.Graphics();
 app.stage.addChild(dots);
 
-// En funktion som gör om ett värde (0 = kallt, 1 = varmt) till en färg
+// Gör om ett värde (0 = kallt, 1 = varmt) till en färg
 function heatColor(t) {
   if (t < 0.25) return 0x2a0a6b; // mörklila
   if (t < 0.5)  return 0xa000a0; // magenta
