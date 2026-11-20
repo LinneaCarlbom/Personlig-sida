@@ -79,6 +79,6 @@ h1 {
 video {
   display: block;
   width: 100%;
-  max-width: 50rem;
+  max-width: 30rem;
   margin: 2rem auto;
 }
